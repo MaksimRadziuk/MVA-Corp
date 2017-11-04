@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0; 
     background-color: #394048;
+    overflow: hidden;
 }
 
 a, p, span {
@@ -165,22 +166,28 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;   
-    animation: scroll 6s ease-in-out infinite;
+    animation: scroll 20s ease-in-out infinite;
 }
 @keyframes scroll {
     0% {
         top:0;
     }
-    20% {
-        top: -100px;
+    10% {
+        top:0;
+    }
+    25% {
+        top: -300px;
     }
     40% {
-        top: -400px;
+        top: -700px;
     }
     70% {
-        top:-600px;
+        top:-1000px;
     }
-    95% {
+    90% {
+        top:-1420px;
+    }
+    100% {
         top:0;
     }
 }
@@ -208,7 +215,7 @@ button {
     display: block;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 140px;
     height: 80px;
     z-index: 999;
 }
@@ -240,7 +247,7 @@ button {
     bottom: 30px;
     right: 50px;
     height: 30px;
-    width: 70%;
+    width: 50%;
     z-index: 999;
     overflow: hidden;
 }
@@ -438,21 +445,19 @@ button {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1000;
+    z-index: 1002;
     opacity: .8;
 }
 .visible {
     background: #fff;
     position: fixed;
-    left: 50%;
-    top: 40%;
-    margin-top: -285px;
+    left: calc(50% - 285px);
+    top: calc(50% - 320px);
     overflow: hidden;
     z-index: 2000;
     width: 570px;
     height: 640px;
     padding: 20px 50px;
-    margin-left: -170px;
     box-sizing: border-box;
 }
 .red-block {
@@ -1148,4 +1153,213 @@ input.win-add-checkbox:checked + label span {
 }
 
 
+/* ===== ДЕСКТОП МЕНЮ ======= */
+.menu-desktop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1002;
+}
+.menu-btn {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    background-color: #394048;
+    cursor: pointer;
+}
+.menu-close {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #394048;
+    cursor: pointer;
+}
+.menu-close.change {
+    background-color: #4d545b;
+}
+.menu-close.change span:nth-child(1) {
+    transform: rotateZ(45deg);
+    top: 40px;
+}
+.menu-close.change span:nth-child(3) {
+    transform: rotateZ(-45deg);
+    top: 40px;
+}
+.menu-close.change span:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn span {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    left: 20px;
+    opacity: 1;
+    transition: 0.2s all linear;
+}
+.menu-btn span:nth-child(1) {
+    top: 28px;
+}
+.menu-btn span:nth-child(2) {
+    top: 38px;
+}
+.menu-btn span:nth-child(3) {
+    top: 48px;
+}
+.menu-close span {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    left: 20px;
+    opacity: 1;
+    transition: 0.2s all linear;
+}
+.menu-close span:nth-child(1) {
+    top: 28px;
+}
+.menu-close span:nth-child(2) {
+    top: 38px;
+}
+.menu-close span:nth-child(3) {
+    top: 48px;
+}
+.menu-desktop ul {
+    display: block;
+    background-color: #394048;
+    height: 100%;
+    padding: 140px 0 0 0; 
+    margin: 0;
+    list-style: none;
+}
+.menu-desktop ul li {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.menu-desktop ul li:hover {
+    background-color: #353b43;
+}
+.menu-desktop ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
 
+
+/* === ТЕЛЕФОНЫ И ЯЗЫКИ === */
+.phones {
+    position: absolute;
+    top: 0;
+    left: 45vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999; 
+}
+.phones a {
+    margin-right: 60px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.call-order {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-image:url(../img/call-icon.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 0;
+}
+
+.languages {
+    position: absolute;
+    top: 0;
+    left: 75vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999; 
+    color: #fff;
+}
+.languages a {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.languages a.active {
+    color: #2f353c;
+}
+
+/* === ОТПРАВИТЬ ПИСЬМО (ФУТЕР) === */
+.mail-order {
+    position: absolute;
+    left: 15vw;
+    bottom: -50px;
+    width: 308px;
+    height: auto;
+    z-index: 999;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.mail-order:hover {
+    bottom: 0;
+}
+.mail-order .visible-part {
+    width: 100%;
+    max-width: 308px;
+    height: 38px;
+    background-image: url(../img/mailOrder-bcg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.visible-part i {
+    font-size: 14px;
+    color: #fff;
+}
+.visible-part p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+    font-family: sans-serif;
+}
+.hidden-part {
+    width: 308px;
+    height: 50px;
+    background-color: #656464;
+    padding: 0;
+    text-align: center;
+}
+.hidden-part i {
+    font-size: 50px;
+    color: #fff;
+}
