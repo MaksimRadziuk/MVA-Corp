@@ -131,7 +131,7 @@ button {
     background-image: url(../img/pc1920x1070.png);
     background-repeat: no-repeat;
     background-size: cover;
-    top: 350px;
+    top: 32vh;
     left: 710px;
     z-index: 9;
     overflow: hidden;
@@ -142,7 +142,7 @@ button {
         top:1070px;
     }
     100% {
-        top: 346px;
+        top: 32vh;
     }
 }
 
@@ -908,6 +908,10 @@ input.win-add-checkbox:checked + label span {
         background-size:1450px 800px;
         background-position: right bottom;
     }
+    #section3 .hover-block {
+        background-size:1450px 800px;
+        background-position: right bottom;
+    }
     #section4 .hover-block {
         background-size:1450px 800px;
         background-position: center;
@@ -993,6 +997,9 @@ input.win-add-checkbox:checked + label span {
         background-size:1280px 720px;
     }
     #section1 .hover-block {
+        background-size:1280px 720px;
+    }
+    #section3 .hover-block {
         background-size:1280px 720px;
     }
     .monitor {
@@ -1238,6 +1245,7 @@ input.win-add-checkbox:checked + label span {
     }
     #section3 .hover-block {
         background-image: url(../img/hover-bcg3-1024.png);
+        background-size:1024px 768px;
     }
     .monitor {
         width: 550px;
@@ -1498,7 +1506,8 @@ input.win-add-checkbox:checked + label span {
         background-size: 768px 1024px;
     }
     #section1 .hover-block {
-        display: none;
+        background: url(../img/hover-bcg1-768x1024.png) center no-repeat;
+        background-position: top left;
     }
     #section2 {
         background:url(../img/bcg2-768x1024.png);
@@ -1507,6 +1516,9 @@ input.win-add-checkbox:checked + label span {
     #section3 {
         background:url(../img/bcg3-768x1024.png);
         background-position: center;
+    }
+    #section3 .hover-block {
+        background: url(../img/hover-bcg3-768x1024.png) center no-repeat;
     }
     #section4 {
         background:url(../img/bcg4-768x1024.png);
@@ -1868,7 +1880,77 @@ input.win-add-checkbox:checked + label span {
     background-position: center center;
     margin-right: 0;
 }
-
+.call-order:hover {
+    animation:shaking 2s infinite;
+}
+@keyframes shaking {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    2.5% {
+        transform: rotateZ(10deg);
+    }
+    5% {
+        transform: rotateZ(-10deg);
+    }
+    7.5% {
+        transform: rotateZ(10deg);
+    }
+    10% {
+        transform: rotateZ(-10deg);
+    }
+    12.5% {
+        transform: rotateZ(10deg);
+    }
+    15% {
+        transform: rotateZ(-10deg);
+    }
+    17.5% {
+        transform: rotateZ(10deg);
+    }
+    20% {
+        transform: rotateZ(-10deg);
+    }
+    22.5% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(10deg);
+    }
+    27.5% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(10deg);
+    }
+    32.5% {
+        transform: rotateZ(-10deg);
+    }
+    35% {
+        transform: rotateZ(10deg);
+    }
+    37.5% {
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        transform: rotateZ(10deg);
+    }
+    42.5% {
+        transform: rotateZ(-10deg);
+    }
+    45% {
+        transform: rotateZ(10deg);
+    }
+    47.5% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
 .languages {
     position: absolute;
     top: 0;
@@ -1959,6 +2041,16 @@ input.win-add-checkbox:checked + label span {
     }
 }
 
+@media all and (max-width: 1366px) {
+    .menu-desktop ul li {
+        margin-bottom: 0;
+        height: 55px;
+    }
+    .menu-desktop ul li a {
+        line-height: 55px;
+    }
+}
+
 @media all and (max-width: 1280px) {
     .phones {
         display: block;
@@ -1980,9 +2072,7 @@ input.win-add-checkbox:checked + label span {
     .languages {
         left: 70vw;
     }
-    .menu-desktop ul li {
-        margin-bottom: 0;
-    }
+    
 }
 
 @media all and (max-width: 1024px) {
@@ -2060,6 +2150,14 @@ input.win-add-checkbox:checked + label span {
         top: 180px;
         width: 465px;
         height: 430px;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            left: calc(100% - 10px);
+        }
+        100% {
+            left: 150px;
+        }
     }
     .picture-box {
         top: 17px;
@@ -2577,5 +2675,118 @@ input.win-add-checkbox:checked + label span {
     }
     .menu-desktop ul {
         padding-top: 40px;
+    }
+}
+
+@media all and (width: 1024px) and (height: 1366px) {
+
+
+    .monitor {
+        left: 310px;
+        top:320px;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top: calc(100% + 10px);
+        }
+        100% {
+            top:320px;
+        }
+    }
+    #section1 {
+        background-image:url(../img/bcg1-iPadPro.png);
+        background-size: 1024px 1366px;
+    }
+    #section2 {
+        background-image:url(../img/bcg2-iPadPro.png);
+        background-size: 1024px 1366px;
+    }
+    #section3 {
+        background-image:url(../img/bcg3-iPadPro.png);
+        background-size: 1024px 1366px;
+    }
+    #section4 {
+        background-image:url(../img/bcg4-iPadPro.png);
+        background-size: 1024px 1366px;
+    }
+    #section5 {
+        background-image:url(../img/bcg5-iPadPro.png);
+        background-size: 1024px 1366px;
+        background-position: top left;
+    }
+    
+    #section1 .hover-block {
+        background-image: url(../img/hover-bcg1-iPadPro.png);
+        background-size: 1024px 1366px;
+    }
+    #section3 .hover-block {
+        background-image: url(../img/hover-bcg3-iPadPro.png);
+        background-size: 1024px 1366px;
+        background-position: top left;
+    }
+    #section4 .hover-block {
+        background-image: url(../img/hover-bcg4-iPadPro.png);
+        background-size: 1024px 1366px;
+        background-position: center;
+    }
+    #section5 .hover-block {
+        background-image: url(../img/hover-bcg5-iPadPro.png);
+        background-size: 1024px 1366px;
+        background-position: top left;
+    }
+}
+@media all and (width: 1366px) and (height: 1024px) {
+
+    .monitor {
+        left: 510px;
+        top:320px;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top: calc(100% + 10px);
+        }
+        100% {
+            top:320px;
+        }
+    }
+    #section1 {
+        background-image:url(../img/bcg1-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    #section2 {
+        background-image:url(../img/bcg2-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    #section3 {
+        background-image:url(../img/bcg3-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    #section4 {
+        background-image:url(../img/bcg4-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    #section5 {
+        background-image:url(../img/bcg5-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    
+    #section1 .hover-block {
+        background-image: url(../img/hover-bcg1-iPadPro-album.png);
+        background-size: 1366px 1024px;
+    }
+    #section3 .hover-block {
+        background-image: url(../img/hover-bcg3-iPadPro-album.png);
+        background-size: 1366px 1024px;
+        background-position: top left;
+    }
+    #section4 .hover-block {
+        background-image: url(../img/hover-bcg4-iPadPro-album.png);
+        background-size: 1366px 1024px;
+        background-position: center;
+    }
+    #section5 .hover-block {
+        background-image: url(../img/hover-bcg5-iPadPro-album.png);
+        background-size: 1366px 1024px;
+        background-position: top left;
     }
 }
