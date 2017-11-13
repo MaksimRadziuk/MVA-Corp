@@ -2979,7 +2979,7 @@ input.win-add-checkbox:checked + label span {
     }
 }
 
-@media all and (max-height: 1024px) and (min-width: 650px;) {
+@media all and (max-height: 1024px) and (min-width: 650px) {
     .visible {
         height: 600px;
     }
