@@ -52,3 +52,15 @@ $(document).ready(function(){
   });
 });
 
+
+
+$(document).ready(function(){
+  $(".close-cookies").click(function() {
+    $('.cookie-branch').hide();
+    $('#section1').css("height", "100vh");
+    $('#section2').css("height", "100vh");
+    $('#section3').css("height", "100vh");
+    $('#section4').css("height", "100vh");
+    $('#section5').css("height", "100vh");
+  });
+});

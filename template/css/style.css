@@ -24,6 +24,53 @@ button {
     border:none;
     cursor: pointer;
 }
+
+.cookie-branch {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: #969da4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 80px;
+    box-sizing: border-box;
+}
+.cookie-branch .close-cookies {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/close-cookie.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-decoration: none;
+}
+.cookie-branch .close-cookies:hover {
+    outline: none;
+    text-decoration: none;
+}
+.cookie-branch div p {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    display: inline;
+}
+.cookie-branch div a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #394048;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+
+
 .active {
     display: block;
     visibility: visible;
@@ -33,7 +80,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-color: #777c84;
     position: relative;
@@ -48,7 +95,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-color: #777c84;
     position: relative;
@@ -62,7 +109,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-color: #777c84;
     position: relative;
@@ -76,7 +123,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-color: #777c84;
     position: relative;
@@ -90,7 +137,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-color: #777c84;
     position: relative;
@@ -104,7 +151,7 @@ button {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     z-index: 99;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -367,8 +414,8 @@ button {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    bottom: 30px;
-    right: 50px;
+    bottom: 50px;
+    right: 30px;
     height: 30px;
     width: 50%;
     z-index: 999;
@@ -409,6 +456,27 @@ button {
     flex-direction: row;
     align-items: center;
 }
+
+.policy-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+}
+.policy-links a {
+    text-decoration: none;
+    color: #282e34;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Bicubik", sans-serif;
+    letter-spacing: 2px;
+}
+
+
 .order {
     display: block;
     position: absolute;
