@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0; 
     background-color: #394048;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 
 a, p, span {
@@ -73,6 +73,14 @@ button {
     margin-left: 40px;
 }
 
+
+
+.mainCookie {
+    height: calc(100vh - 40px);
+}
+.contentCookie {
+    height: calc(50vh - 40px);
+}
 
 
 .active {
@@ -1319,7 +1327,8 @@ input.win-add-checkbox:checked + label span {
         margin-left: 110px;
     }
     .visible {
-        height: 550px;
+        top: 40px;
+        height: 620px;
         padding: 20px 50px;
     }
 }
@@ -1350,9 +1359,9 @@ input.win-add-checkbox:checked + label span {
         background-image: url(../img/hover-bcg3-1024.png);
         background-size:1024px 768px;
     }
-    .monitor {s
+    .monitor {
         height: 460px;
-        top: 220px;
+        top: 150px;
         left: 235px;
         background-size: 100%;
     }
@@ -1361,7 +1370,7 @@ input.win-add-checkbox:checked + label span {
             top:768px;
         }
         100% {
-            top: 227px;
+            top: 150px;
         }
     }
     .picture-box {
@@ -1519,7 +1528,7 @@ input.win-add-checkbox:checked + label span {
     .block-color {
         width: 330px;
         height: 280px;
-        top: 150px;
+        top: 110px;
         }
     @keyframes rightBoxAppearance {
         0% {
@@ -1863,6 +1872,12 @@ input.win-add-checkbox:checked + label span {
     .foot-text {
         bottom: 80px;
     }
+    .visible {
+        width: 95%;
+        left: 2.5%;
+        top: 2.5%;
+        height: 700px;
+    }
 }
 
 /* ===== ДЕСКТОП МЕНЮ ======= */
@@ -1882,7 +1897,7 @@ input.win-add-checkbox:checked + label span {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1001;
+    z-index: 999;
     background-color: #394048;
     cursor: pointer;
 }
@@ -2439,12 +2454,7 @@ input.win-add-checkbox:checked + label span {
             top:0;
         }
     }
-    .visible {
-        width: 95%;
-        left: 2.5%;
-        top: 2.5%;
-        height: 700px;
-    }
+    
     .foot-text {
         bottom: 100px;
     }
@@ -2973,13 +2983,14 @@ input.win-add-checkbox:checked + label span {
         margin: 10px 0;
     }
     .visible {
+        top: 40px;
         width: 520px;
         left:calc(50% - 260px);
         height: 540px;
     }
 }
 
-@media all and (max-height: 1024px) and (min-width: 650px) {
+@media all and (max-height: 1024px) and (min-width: 650px) and (max-width: 768px) {
     .visible {
         height: 600px;
     }

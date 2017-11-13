@@ -62,22 +62,24 @@ $(document).ready(function(){
     $('#section3').css("height", "100vh");
     $('#section4').css("height", "100vh");
     $('#section5').css("height", "100vh");
+    $('#top-part').css("height", "50vh");
   });
 });
 
-$(window).on('load', function () {
-    if($('body').is('.cookie-branch')) {
-    $('#section1').css("height", "calc(100vh - 40px)");
+
+if ($(".cookie-branch").length){
+  $('#section1').css("height", "calc(100vh - 40px)");
     $('#section2').css("height", "calc(100vh - 40px)");
     $('#section3').css("height", "calc(100vh - 40px)");
     $('#section4').css("height", "calc(100vh - 40px)");
     $('#section5').css("height", "calc(100vh - 40px)");
-    }
-    else {
-    $('#section1').css("height", "100vh");
+    $('#top-part').css("height", "calc(50vh - 40px)");
+
+}
+else { $('#section1').css("height", "100vh");
     $('#section2').css("height", "100vh");
     $('#section3').css("height", "100vh");
     $('#section4').css("height", "100vh");
     $('#section5').css("height", "100vh");
-    }
-});
+    $('#top-part').css("height", "50vh");
+}

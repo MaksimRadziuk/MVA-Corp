@@ -1,0 +1,951 @@
+
+    /* =================== */
+/* ====== CONTACTS PAGE ======= */
+    /* =================== */
+
+section.contacts {
+    width: 100%;
+    background-color: #6e767f;
+    box-sizing: border-box;
+}
+.top-part {
+    display: block;
+    width: 100%;
+    height: calc(50vh - 40px);
+    position: relative;
+}
+.bottom-part {
+    background-color: #fff;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow:hidden;
+}
+.bottom-part.long {
+    height: auto;
+    min-height: 50vh;
+}
+.contacts .footer .foot-text .foot-holder span,
+.contacts .footer .foot-text .skype-holder p,
+.contacts .footer .foot-text .skype-holder i {
+    color:#394048;
+}
+.contacts .footer .foot-text .skype-holder i {
+    font-size: 24px;
+}
+.contacts .footer .foot-text .divider {
+    background-color: #394048;
+}
+.top-part .big {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 170px;
+    letter-spacing: 15px;
+    opacity: 0.1;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+    bottom: -50px;
+    left: -10px;
+    z-index: 1;
+    pointer-events: none;
+}
+.big-skype-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 790px;
+    top: 80px;
+    right: 0;
+    opacity: 0.05;
+    z-index: 1;
+    overflow: hidden;
+}
+.big-skype-holder i {
+    font-size: 230px;
+    color:#394048;
+    display: inline-block;
+    margin-right: 60px;
+}
+    
+.big-skype-holder p {
+    font-size: 50px;
+    color:#394048;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+.schedule {
+    position: relative;
+    width: 745px;
+    height: 400px;
+    background-color: #12c5c7;
+    top: calc(50vh - 400px); 
+    left: 20%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.schedule p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.schedule p span:nth-child(1) {
+    width: 200px;
+}
+.schedule p span:nth-child(2) {
+    width: 390px;
+}
+.yell1 {
+    position: absolute;
+    top: 195px;
+    left: 80px;
+}
+.yell1 span {
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background-color: #a8c61e;
+}
+.yell1 span:after {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    background-color: #a8c61e;
+    opacity: 0.3;
+    position: absolute;
+    left: -80px;
+}
+.yell1 p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+
+.yell2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 195px;
+    right: 210px;
+}
+.yell2 span {
+    display: inline-block;
+    width: 5px;
+    height: 40px;
+    background-color: #a8c61e;
+}
+.yell2 span:after {
+    content: '';
+    display: inline-block;
+    width: 210px;
+    height: 40px;
+    background-color: #a8c61e;
+    opacity: 0.3;
+    position: absolute;
+    right: -210px;
+}
+.yell2 p {
+    width: 390px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 40px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.yell3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+.yell3 span {
+    display: inline-block;
+    width: 5px;
+    height: 40px;
+    background-color: #a8c61e;
+}
+.yell3 span:after {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #a8c61e;
+    opacity: 0.3;
+    position: absolute;
+    left: -80px;
+}
+.yell3 p {
+    width: 230px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.roundArrow {
+    display: block;
+    width: 28%;
+    height: 280px;
+    position: absolute;
+    top: 60px;
+    left: 230px;
+    background-image: url(../img/roundArrow.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.redForm {
+    position: relative;
+    margin-top: 0;
+    margin-left: 20%;
+    width: 745px;
+    height: 35px;
+    background-color: #f54657;
+    box-sizing: border-box;
+    z-index: 4;
+    overflow: hidden;
+    transition: 0.2s all ease;
+}
+.redForm.show {
+    width: 925px;
+    height: 445px;
+    padding: 50px;
+}
+.redForm.show .arrowDown {
+    bottom:-10px;
+}
+.redForm-content {
+    width: 100%;
+    height: 40px;
+}
+.redForm form {
+    display: none;
+}
+.arrowDown {
+    width: 21px;
+    height: 13px;
+    position: relative;
+    left:360px;
+    bottom: -11px; 
+    background-image: url(../img/arrowDown.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.arrowDown.rotated {
+    transform: rotateZ(180deg);
+}
+.inputText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.inputText input {
+    outline: none;
+    border:1px solid #fab2b8;
+    width: 25%;
+    height: 35px;
+    padding-left: 20px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.inputText input::-webkit-input-placeholder {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.inputText input::-moz-placeholder          {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    }/* Firefox 19+ */
+.inputText input:-moz-placeholder           {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    }/* Firefox 18- */
+.inputText input:-ms-input-placeholder      {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.redForm textarea {
+    outline: none;
+    border:1px solid #fab2b8;
+    width: 95%;
+    height: 155px;
+    padding:10px 20px;
+    background-color: transparent;
+    resize: none;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.redForm textarea::-webkit-input-placeholder {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.redForm textarea::-moz-placeholder          {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    }/* Firefox 19+ */
+.redForm textarea:-moz-placeholder           {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    }/* Firefox 18- */
+.redForm textarea:-ms-input-placeholder      {
+    color:#fab2b8;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.bottomRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.captcha {
+    width: 180px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 80px;
+}
+.redForm input[type="checkbox"] {
+    display: none;
+}
+.redForm label {
+    display: inline-block;
+    padding-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    line-height: 20px;
+    width: 300px;
+}
+.redForm label a {
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#394048;
+}
+.redForm label p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.redForm label:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border:1px solid #fff;
+    background-color: transparent;
+    margin-right: 30px;
+    margin-left: -60px;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+.redForm input[type="checkbox"]:checked + label:before {
+    background:url(../img/redForm-checked.png) top no-repeat;
+}
+
+.buttonSubmit {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 67px;
+    text-align: center;
+    line-height: 45px;
+    width: 210px;
+    height: 45px;
+    background-color: #394048;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contacts .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.contacts .footer .mail-order {
+    left: 80px;
+}
+.contacts .footer .foot-text {
+    z-index: 3;
+}
+
+@media all and (max-width: 1716px) {
+    .yell2 span:after {
+        width: 80px;
+        right: -80px;
+        height: 75px;
+    }
+    .yell2 span {
+        height: 75px;
+    }
+    .yell2 {
+        right: 80px;
+    }
+}
+@media all and (max-width: 1680px) {
+    .roundArrow {
+        width: 29%;
+    }
+    .contacts .footer .foot-text {
+        width: 870px;
+    }
+}
+
+@media all and (max-width: 1585px) {
+    .yell2 p {
+        width: 290px;
+    }
+    
+}
+
+@media all and (max-width: 1440px) {
+    .roundArrow {
+        width: 31%;
+        height: 210px;
+    }
+    .bottom-part.long {
+        padding-bottom: 100px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .yell2 {
+        top: 120px;
+    }
+    .yell1 {
+        top: 120px;
+    }
+    .yell2 p {
+        width: 207px;
+        font-size: 12px;
+        margin-right: 35px;
+    }
+    .big-skype-holder {
+        width: 500px;
+    }
+    .big-skype-holder i {
+        font-size: 140px;
+    }
+    .big-skype-holder p {
+        font-size: 26px;
+    }
+    .schedule {
+        left: 22%;
+        width: 725px;
+    }
+    .redForm {
+        margin-left: 22%;
+        width: 725px;
+    }
+    .top-part .big {
+        font-size: 155px;
+    }
+    .roundArrow {
+        width: 33.6%;  
+    }
+    .schedule p {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .schedule p:first-child {
+        margin-right: 20px;
+    }
+    .schedule p span:nth-child(1) {
+        width: 155px;
+    }
+
+}
+
+@media all and (max-width: 1280px) {
+    .schedule {
+        width: 600px;
+        height: 220px;
+        left: 25vw;
+        top: calc(50vh - 220px);
+    }
+    .redForm {
+        width: 600px;
+        margin-left: 25vw;
+    }
+    .redForm.show {
+        width: calc(100% - 25vw);
+    }
+    .roundArrow {
+        width:32%;  
+    }
+    .arrowDown {
+        left: 293px;
+    }
+    .contacts .footer .foot-text {
+        width: 564px;
+        bottom: 70px;
+    }
+    .contacts .skype-holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+        margin-left: calc(100% - 160px);
+    }
+    .bottom-part.long {
+        padding-bottom: 140px;
+    }
+    .yell2 {
+        top: 190px;
+    }
+    .yell1 {
+        top: 190px;
+    }
+    .top-part .big {
+        font-size: 120px;
+        bottom: -37px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .schedule {;
+        left: 320px;
+    }
+    .redForm {
+        margin-left: 320px;
+    }
+    .redForm.show {
+        width: calc(100% - 320px);
+        height: 540px;
+    }
+    .yell2 {
+        top: 85px;
+    }
+    .yell2 p {
+        width: 535px;
+    }
+    .yell2 span {
+        height: 10px;
+    }
+    .yell2 span:after {
+        height: 10px;
+    }
+    .yell3 p, .yell1 p {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .yell3 p {
+        line-height: 25px;
+    }
+    .roundArrow {
+        width: 40%;
+    }
+    .top-part .big {
+        letter-spacing: 7px;
+    }
+    .contacts .footer .foot-text .divider {
+        display: none;
+    }
+    .contacts .footer .foot-text .foot-holder span:last-child {
+        display: none;
+    }
+    .contacts .footer .skype-holder {
+        margin-left: 0;
+    }
+    .contacts .footer .foot-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 390px;
+    }
+    .big-skype-holder{
+        width: 380px;
+        margin-left: calc(100% - 380px);
+    }
+    .contacts .big-skype-holder i {
+        font-size: 100px;
+        margin-right: 25px;
+    }
+    .big-skype-holder p {
+        font-size: 22px;
+    }
+    .redForm.show .arrowDown {
+        bottom: -100px;
+    }
+    .redForm textarea {
+        width: 93%;
+    }
+    .redForm label p {
+        font-size: 10px;
+    }
+    .redForm label a {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) {
+    .yell2 {
+        right: 60px;
+    }
+    .yell2 p{
+        letter-spacing: 1px;
+    }
+    .yell2 span:after {
+        width: 60px;
+        right: -60px;
+    }
+    .yell1 {
+        top: 180px;
+    }
+    .top-part .big {
+        font-size: 100px;
+        letter-spacing: 4px;
+        bottom: -30px;
+        left: -5px;
+    }
+    .redForm {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .redForm.show {
+        width: 85%;
+    }
+    .schedule {
+        position: relative;
+        margin: 0 auto;
+        left: auto;
+        width: 85%;
+    }
+    .arrowDown {
+        left: calc(50% - 10px);
+    }
+    .contacts .footer .foot-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 75px;
+        height: 50px;
+    }
+    .contacts .skype-holder {
+        width: 164px;
+    }
+    .big-skype-holder {
+        top: 300px;
+    }
+    .yell3 {
+        top: calc(25vh - 10px);
+    }
+    .yell3 p {
+        width: 280px;
+    }
+    .yell3 span {
+        height: 10px;
+    }
+    .yell3 span:after {
+        height: 10px;
+    }
+    .roundArrow {
+        left: 83px;
+        background-size: 200%;
+        background-position: right top;
+        height: 190px;
+    }
+    .redForm textarea {
+        width: 91%;
+    }
+    .bottomRow {
+        flex-direction:column-reverse;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .redForm label {
+        padding-left: 60px;
+        margin-bottom: 35px;
+        width: 90%;
+    }
+    .redForm.show .arrowDown {
+        bottom: -45px;
+        left: calc(50% - 10px);
+    }
+    .buttonSubmit {
+        bottom: 75px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .yell2 {
+        top: 120px;
+    }
+    .top-part .big {
+        font-size: 92px;
+    }
+    .contacts .footer .foot-text {
+        bottom: 110px;
+    }
+    .bottom-part.long {
+        padding-bottom: 180px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .yell2 p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .yell2 span {
+        height: 30px;
+    }
+    .yell2 span:after {
+        height: 30px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .top-part {
+        height: 65vh; !important
+    }
+    .bottom-part {
+        height: 35vh;
+    }
+    .contacts .footer .foot-text {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        bottom: 10px;
+    }
+    .contacts .skype-holder {
+        width: 140px;
+        display: flex;
+        align-items: center;
+    }
+    .contacts .skype-holder p {
+        margin: 0;
+    }
+    .yell3 p {
+        width: 200px;
+        line-height: 20px;
+    }
+    .yell3 span {
+        height: 30px;
+    }
+    .yell3 span:after {
+        height: 30px;
+        width: 60px;
+        left: -60px;
+    }
+    .yell3 {
+        top: 110px;
+        left: 60px;
+    }
+    .yell1 {
+        top: 140px;
+        left: 60px;
+    }
+    .yell1 p {
+        font-size: 14px;
+
+    }
+    .yell2 {
+        top: 80px;
+    }
+
+    .yell2 p {
+        width: 285px;
+    }
+    .roundArrow {
+        height: 55px;
+        width: 36%;
+    }
+    .big-skype-holder {
+        display: none;
+    }
+    .schedule {
+        padding: 20px;
+        width: 90%;
+        top:calc(65vh - 220px);
+    }
+    .schedule p {
+        font-size: 14px;
+    }
+    .top-part .big {
+        font-size: 14.5vw;
+        bottom: -10px;
+    }
+    .redForm {
+        width: 90%;
+    }
+    .redForm.show {
+        width: 90%;
+        padding: 20px;
+        height: 620px;
+    }
+    .inputText {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .inputText input {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .inputText input:last-child {
+        margin-bottom: 0;
+    }
+    .redForm textarea {
+        width: 89%;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    .bottomRow {
+        flex-direction: column;
+    }
+    .captcha {
+        margin-bottom: 20px;
+    }
+    .redForm label {
+        margin-bottom: 20px;
+        padding-left: 40px;
+    }
+    .buttonSubmit {
+        position: relative;
+        margin: 0 auto;
+        height: 45px;
+        width: 180px;
+        bottom: auto;
+        left: auto;
+    }
+    .redForm.show .arrowDown {
+        bottom: -20px;
+    }
+    .redForm label p, .redForm label a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .redForm label:before {
+        margin-right: 15px;
+        margin-left: -40px;
+    }
+    .foot-text .foot-holder span {
+        letter-spacing: 1px;
+        font-size: 9px;
+    }
+    .contacts .skype-holder {
+        width: 125px;
+        letter-spacing: 1px;
+        margin-top: -3px;
+    }
+    .contacts .footer .foot-text .skype-holder p {
+        font-size: 9px;
+    }
+    .contacts .footer .foot-text .skype-holder i {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 420px) {
+    .inputText input {
+        width: 93%;
+    }
+    .redForm textarea {
+        width: 86%;
+    }
+    .roundArrow {
+        width: 33%;
+    }
+}
+@media all and (max-width: 400px) {
+    .redForm.show {
+        height: 640px;
+    }
+}
+@media all and (max-width: 381px) {
+    .schedule p {
+        letter-spacing: 1px;
+    }
+    .schedule {
+        height: 180px;
+        top: calc(65vh - 180px);
+    }
+    .yell3 {
+        top: 80px;
+    }  
+    .roundArrow {
+        width: 26%;
+        top: 40px;
+    }
+    .yell2 p {
+        margin-right: 20px;
+    }
+}
+/* @media all and (max-height: 1000px) {
+    .schedule {
+        height: 350px;
+        top: calc(50vh - 350px);
+    }
+}
+@media all and (max-height: 880px) {
+    .schedule {
+        height: 300px;
+        top: calc(50vh - 300px);
+    }
+}
+@media all and (max-height: 768px) {
+    .schedule {
+        height: 250px;
+        top: calc(50vh - 250px);
+    }
+}
+@media all and (max-height: 670px) {
+    .schedule p {
+        margin-bottom: 20px;
+    }
+    .schedule {
+        height: 200px;
+        top: calc(50vh - 200px);
+    }
+} */
