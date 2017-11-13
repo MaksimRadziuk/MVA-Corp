@@ -47,6 +47,7 @@ button {
     background-size: 100%;
     background-position: center;
     text-decoration: none;
+    margin-left: 20px;
 }
 .cookie-branch .close-cookies:hover {
     outline: none;
@@ -61,8 +62,11 @@ button {
     display: inline;
 }
 .cookie-branch div a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    display: inline-block;
+    width: 63px;
+    height: 15px;
+    text-align: center;
+    border-bottom:1px dotted;
     color: #394048;
     font-family: Roboto, sans-serif;
     font-size: 12px;
@@ -461,7 +465,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 900px;
+    width: 800px;
     height: 20px;
     position: absolute;
     right: 30px;
@@ -470,7 +474,7 @@ button {
 .policy-links a {
     text-decoration: none;
     color: #282e34;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     font-family: "Bicubik", sans-serif;
     letter-spacing: 2px;
@@ -1539,7 +1543,7 @@ input.win-add-checkbox:checked + label span {
 @media all and (max-width: 1015px) {
     .foot-text {
         display: block;
-        bottom: 30px;
+        bottom: 50px;
         right: 0;
         height: 60px;
         width: 100%;
@@ -1565,6 +1569,13 @@ input.win-add-checkbox:checked + label span {
         display: flex;
         float: right;
     }
+}
+
+@media all and (max-width: 840px) {
+    .policy-links {
+        width: 600px;
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -1808,7 +1819,19 @@ input.win-add-checkbox:checked + label span {
         padding: 30px 30px; 
     }
 }
-
+@media all and (max-width: 680px) {
+    .cookie-branch {
+        padding: 0 20px;
+    }
+    .policy-links {
+        flex-direction: column;
+        height: 60px;
+        align-items: flex-end;
+    }
+    .foot-text {
+        bottom: 80px;
+    }
+}
 
 /* ===== ДЕСКТОП МЕНЮ ======= */
 .menu-desktop {
@@ -2179,7 +2202,6 @@ input.win-add-checkbox:checked + label span {
         text-align: left;
         width: 360px;
         right: 20px;
-        bottom: 10px;
     }
     .divider {
         display: none;
@@ -2208,7 +2230,6 @@ input.win-add-checkbox:checked + label span {
         text-align: right;
         width: 200px;
         right: 20px;
-        bottom: 10px;
     }
     .block-color {
         top: 510px;
@@ -2727,7 +2748,7 @@ input.win-add-checkbox:checked + label span {
         padding:0 20px;
         text-align: right;
         right: 0;
-        bottom: 0;
+        bottom: 50px;
         font-size: 9px;
         height: 40px;
     }
@@ -2743,6 +2764,12 @@ input.win-add-checkbox:checked + label span {
     }
     .menu-desktop ul {
         padding-top: 40px;
+    }
+    .policy-links {
+        height: 40px;
+    }
+    .policy-links a {
+        font-size: 8px;
     }
 }
 
