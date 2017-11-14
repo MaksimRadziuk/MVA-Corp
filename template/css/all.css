@@ -1069,7 +1069,15 @@ input.win-add-checkbox:checked + label span {
         display: none;
     }
     .cookie-branch {
-        display: none;
+        overflow:hidden;
+    }
+    .cookie-branch div {
+        height: 100%;
+        line-height: 10px;
+    }
+    .cookie-branch div a {
+        height: 10px;
+        width: 48px;
     }
 }
 
