@@ -37,7 +37,7 @@
         <div class="phones">
             <a href="tel:+788009999999">8 (800) 999 99 99</a>
             <a href="tel:+783833333333">8 (383) 333 33 33</a>
-            <a href="#" class="call-order"></a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');" title="Заказать обратный звонок"></a>
         </div>
 
         <div class="languages">
@@ -104,7 +104,7 @@
         <div class="phones">
             <a href="tel:+788009999999">8 (800) 999 99 99</a>
             <a href="tel:+783833333333">8 (383) 333 33 33</a>
-            <a href="#" class="call-order"></a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');"></a>
         </div>
 
         <div class="languages">
@@ -171,7 +171,7 @@
         <div class="phones">
             <a href="tel:+788009999999">8 (800) 999 99 99</a>
             <a href="tel:+783833333333">8 (383) 333 33 33</a>
-            <a href="#" class="call-order"></a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');"></a>
         </div>
 
         <div class="languages">
@@ -238,7 +238,7 @@
         <div class="phones">
             <a href="tel:+788009999999">8 (800) 999 99 99</a>
             <a href="tel:+783833333333">8 (383) 333 33 33</a>
-            <a href="#" class="call-order"></a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');"></a>
         </div>
 
         <div class="languages">
@@ -305,7 +305,7 @@
         <div class="phones">
             <a href="tel:+788009999999">8 (800) 999 99 99</a>
             <a href="tel:+783833333333">8 (383) 333 33 33</a>
-            <a href="#" class="call-order"></a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');"></a>
         </div>
 
         <div class="languages">
@@ -413,10 +413,10 @@
                   <label for="int-mark"><span></span>Интернет-маркетинг</label>
               </div>
               <div class="win-add-input">
-                  <input type="phone" class="phone-input" placeholder="Номер телефона">
+                  <input type="phone" class="phone-input" placeholder="Номер телефона" id="phone">
               </div>
               <div class="win-add-input">
-                  <input type="email" class="email-input" placeholder="Email">
+                  <input type="email" class="email-input" placeholder="email@example.com">
               </div>
               <div class="win-add-input">
                   <input type="checkbox" class="win-add-checkbox" id="confirm-policy">
@@ -427,6 +427,31 @@
         
     </div>
 </div>
+
+<!-- ОБРАТНЫЙ ЗВОНОК -->
+  <div id="win1" style="display: none;">
+     <div class="overlay"></div>
+        <div class="visible">
+          <div class="red-block"></div>
+          <button type="button" onClick="getElementById('win1').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+          <h2>Закажите обратный звонок. Мы перезвоним вам в самое ближайшее время!</h2>
+            <form action="#" name="popup">
+                <div class="win-add-input">
+                    <input type="text" class="phone-input" placeholder="Имя">
+                </div>
+                <div class="win-add-input">
+                    <input type="phone" class="email-input" placeholder="Номер телефона" id="phone1">
+                </div>
+                <div class="win-add-input">
+                    <input type="checkbox" class="win-add-checkbox" id="confirm-policy1">
+                    <label for="confirm-policy1" class="policyForm-label"><span></span>Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></label>
+                </div>
+                <input type="submit" id="submit-button-form" value="заказать услугу">
+            </form>
+          
+      </div>
+  </div>
+<!-- END ОБРАТНЫЙ ЗВОНОК -->
 
 <div id="page-preloader">
     <span class="spinner"></span>
