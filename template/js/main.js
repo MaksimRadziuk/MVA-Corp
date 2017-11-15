@@ -78,6 +78,7 @@ $("document").ready(function(){
       $('#section4').css("height", "100vh");
       $('#section5').css("height", "100vh");
       $('#top-part').css("height", "50vh");
+      $('.hover-block').css("height", "100vh");
     });
   }
   else {
@@ -89,6 +90,7 @@ $("document").ready(function(){
         $('#section4').css("height", "100vh");
         $('#section5').css("height", "100vh");
         $('#top-part').css("height", "65vh");
+        $('.hover-block').css("height", "100vh");
       });
   }
 });
@@ -104,7 +106,7 @@ $("document").ready(function(){
           $('#section4').css("height", "calc(100vh - 40px)");
           $('#section5').css("height", "calc(100vh - 40px)");
           $('#top-part').css("height", "calc(50vh - 40px)");
-
+          $('.hover-block').css("height", "calc(100vh - 40px)");
     }
     else {
           $('#section1').css("height", "100vh");
@@ -113,6 +115,7 @@ $("document").ready(function(){
           $('#section4').css("height", "100vh");
           $('#section5').css("height", "100vh");
           $('#top-part').css("height", "50vh");
+          $('.hover-block').css("height", "100vh");
     }
   }
 });

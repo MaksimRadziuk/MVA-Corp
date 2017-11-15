@@ -374,7 +374,7 @@ input.win-add-checkbox:checked + label span {
     font-family: Roboto;
 }
 
-#submit-button-form {
+.submit-button-form {
     border: none;
     position: absolute;
     bottom: 0;
@@ -388,7 +388,7 @@ input.win-add-checkbox:checked + label span {
     letter-spacing: 2px;
     color:#fff;
 }
-#submit-button-form:focus {
+.submit-button-form:focus {
     outline: none;
 }
 
