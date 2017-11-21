@@ -13,9 +13,9 @@
     background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg1-1920x1070.png);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center;
 }
 #section2 {
     display: none;
@@ -28,9 +28,9 @@
     background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg2-1920x1070.png);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center;
 }
 #section3 {
     display: none;
@@ -42,9 +42,9 @@
     background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg3-1920x1070.png);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center;
 }
 #section4 {
     display: none;
@@ -56,7 +56,7 @@
     background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg4-1920x1070.png);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -70,7 +70,7 @@
     background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg5-1920x1070.png);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -81,8 +81,9 @@
     width: 100vw;
     height: calc(100vh - 40px);
     z-index: 99;
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 #section1 .hover-block {
     background-image: url(../img/hover-bcg1-1920x1070.png);
@@ -92,11 +93,9 @@
 }
 #section4 .hover-block {
     background-image: url(../img/hover-bcg4-1920x1070.png);
-    background-position: center;
 }
 #section5 .hover-block {
     background-image: url(../img/hover-bcg5-1920x1070.png);
-    background-position: center;
 }
 .monitor {
     display: block;
@@ -367,38 +366,38 @@
 }
 
 @media all and (max-width: 1680px) {
-    #section1 {
-        background-size:1780px 1050px;
-        background-position: right bottom;
-    }
-    #section2 {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
-    #section3 {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
-    #section4 {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
-    #section5 {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
-    #section1 .hover-block {
-        background-size:1780px 1050px;
-        background-position: right bottom;
-    }
-    #section4 .hover-block {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
-    #section5 .hover-block {
-        background-size:1780px 1070px;
-        background-position: center;
-    }
+ /*    #section1 {
+     background-size:1780px 1050px;
+     background-position: right bottom;
+ }
+ #section2 {
+     background-size:1780px 1070px;
+     background-position: center;
+ }
+ #section3 {
+     background-size:1780px 1070px;
+     background-position: center;
+ }
+ #section4 {
+     background-size:1780px 1070px;
+     background-position: center;
+ }
+ #section5 {
+     background-size:1780px 1070px;
+     background-position: center;
+ }
+ #section1 .hover-block {
+     background-size:1780px 1050px;
+     background-position: right bottom;
+ }
+ #section4 .hover-block {
+     background-size:1780px 1070px;
+     background-position: center;
+ }
+ #section5 .hover-block {
+     background-size:1780px 1070px;
+     background-position: center;
+ } */
     .monitor {
         width: 750px;
         height: 700px;
@@ -452,7 +451,7 @@
 }
 
 @media all and (max-width: 1440px){
-    #section1 {
+    /* #section1 {
         background-size:1780px 1050px;
         background-position: right bottom;
     }
@@ -483,7 +482,7 @@
     #section5 .hover-block {
         background-size:1780px 1070px;
         background-position: center;
-    }
+    } */
     .monitor {
         width: 630px;
         height: 700px;
@@ -531,7 +530,7 @@
 }
 
 @media all and (max-width: 1366px) {
-    #section1 {
+    /* #section1 {
         background-size:1450px 800px;
         background-position: right bottom;
     }
@@ -566,7 +565,7 @@
     #section5 .hover-block {
         background-size:1450px 800px;
         background-position: center;
-    }
+    } */
     .monitor {
         width: 550px;
         height: 600px;
@@ -621,7 +620,7 @@
 
 
 @media all and (max-width: 1280px) {
-
+/* 
     #section1 {
         background-size:1280px 720px;
     }
@@ -630,7 +629,7 @@
     }
     #section3 .hover-block {
         background-size:1280px 720px;
-    }
+    } */
     .monitor {
         width: 550px;
         height: 450px;
@@ -689,9 +688,9 @@
             top:-2700px;
         }
     }
-    #section3 .hover-block {
+    /* #section3 .hover-block {
         background-image: url(../img/hover-bcg3-1280.png);
-    }
+    } */
     #section3 .picture-box:before {
         height: 2000px;
     }
@@ -781,7 +780,7 @@
 }
 
 @media all and (max-width: 1024px) {
-    #section1 {
+    /* #section1 {
         background-size:1230px 768px;
         background-position: bottom right;
     }
@@ -792,7 +791,7 @@
     #section3 .hover-block {
         background-image: url(../img/hover-bcg3-1024.png);
         background-size:1024px 768px;
-    }
+    } */
     .monitor {
         height: 460px;
         top: 150px;
@@ -947,40 +946,40 @@
 @media all and (max-width: 768px) {
     #section1 {
         background-image: url(../img/bcg1-768x1024.png);
-        background-position: top left;
-        background-size: 768px 1024px;
+        /* background-position: top left;
+        background-size: 768px 1024px; */
     }
     #section1 .hover-block {
-        background: url(../img/hover-bcg1-768x1024.png) center no-repeat;
-        background-position: top left;
+        background-image: url(../img/hover-bcg1-768x1024.png);
+        /* background-position: top left; */
     }
     #section2 {
-        background:url(../img/bcg2-768x1024.png);
-        background-position: top left;
+        background-image:url(../img/bcg2-768x1024.png);
+        /* background-position: top left; */
     }
     #section3 {
-        background:url(../img/bcg3-768x1024.png);
-        background-position: center;
+        background-image:url(../img/bcg3-768x1024.png);
+        /* background-position: center; */
     }
     #section3 .hover-block {
-        background: url(../img/hover-bcg3-768x1024.png) center no-repeat;
+        background-image: url(../img/hover-bcg3-768x1024.png);
     }
     #section4 {
-        background:url(../img/bcg4-768x1024.png);
-        background-position: center;
+        background-image:url(../img/bcg4-768x1024.png);
+        /* background-position: center; */
     }
     #section4 .hover-block {
-        background: url(../img/hover-bcg4-768x1024.png) center no-repeat;
+        background-image: url(../img/hover-bcg4-768x1024.png);
     }
     #section5 {
         background-image: url(../img/bcg5-768x1024.png);
-        background-position: center;
-        background-size: 768px 1024px;
+        /* background-position: center;
+        background-size: 768px 1024px; */
     }
     #section5 .hover-block {
         background-image: url(../img/hover-bcg5-768x1024.png);
-        background-position: center;
-        background-size: 768px 1024px;
+        /* background-position: center;
+        background-size: 768px 1024px; */
     }
     .monitor {
         width: 560px;
@@ -1470,44 +1469,44 @@
     }
     #section1 {
         background-image:url(../img/bcg1-iPadPro.png);
-        background-size: 1024px 1366px;
+        /* background-size: 1024px 1366px; */
     }
     #section2 {
         background-image:url(../img/bcg2-iPadPro.png);
-        background-size: 1024px 1366px;
+        /* background-size: 1024px 1366px; */
     }
     #section3 {
         background-image:url(../img/bcg3-iPadPro.png);
-        background-size: 1024px 1366px;
+        /* background-size: 1024px 1366px; */
     }
     #section4 {
         background-image:url(../img/bcg4-iPadPro.png);
-        background-size: 1024px 1366px;
+        /* background-size: 1024px 1366px; */
     }
     #section5 {
         background-image:url(../img/bcg5-iPadPro.png);
-        background-size: 1024px 1366px;
-        background-position: top left;
+        /* background-size: 1024px 1366px;
+        background-position: top left; */
     }
     
     #section1 .hover-block {
         background-image: url(../img/hover-bcg1-iPadPro.png);
-        background-size: 1024px 1366px;
+        /* background-size: 1024px 1366px; */
     }
     #section3 .hover-block {
         background-image: url(../img/hover-bcg3-iPadPro.png);
-        background-size: 1024px 1366px;
-        background-position: top left;
+        /* background-size: 1024px 1366px;
+        background-position: top left; */
     }
     #section4 .hover-block {
         background-image: url(../img/hover-bcg4-iPadPro.png);
-        background-size: 1024px 1366px;
-        background-position: center;
+        /* background-size: 1024px 1366px;
+        background-position: center; */
     }
     #section5 .hover-block {
         background-image: url(../img/hover-bcg5-iPadPro.png);
-        background-size: 1024px 1366px;
-        background-position: top left;
+        /* background-size: 1024px 1366px;
+        background-position: top left; */
     }
 }
 @media all and (width: 1366px) and (height: 1024px) {
@@ -1525,42 +1524,42 @@
     }
     #section1 {
         background-image:url(../img/bcg1-iPadPro-album.png);
-        background-size: 1366px 1024px;
+        /* background-size: 1366px 1024px; */
     }
     #section2 {
         background-image:url(../img/bcg2-iPadPro-album.png);
-        background-size: 1366px 1024px;
+        /* background-size: 1366px 1024px; */
     }
     #section3 {
         background-image:url(../img/bcg3-iPadPro-album.png);
-        background-size: 1366px 1024px;
+       /*  background-size: 1366px 1024px; */
     }
     #section4 {
         background-image:url(../img/bcg4-iPadPro-album.png);
-        background-size: 1366px 1024px;
+        /* background-size: 1366px 1024px; */
     }
     #section5 {
         background-image:url(../img/bcg5-iPadPro-album.png);
-        background-size: 1366px 1024px;
+        /* background-size: 1366px 1024px; */
     }
     
     #section1 .hover-block {
         background-image: url(../img/hover-bcg1-iPadPro-album.png);
-        background-size: 1366px 1024px;
+        /* background-size: 1366px 1024px; */
     }
     #section3 .hover-block {
         background-image: url(../img/hover-bcg3-iPadPro-album.png);
-        background-size: 1366px 1024px;
-        background-position: top left;
+        /* background-size: 1366px 1024px;
+        background-position: top left; */
     }
     #section4 .hover-block {
         background-image: url(../img/hover-bcg4-iPadPro-album.png);
-        background-size: 1366px 1024px;
-        background-position: center;
+        /* background-size: 1366px 1024px;
+        background-position: center; */
     }
     #section5 .hover-block {
         background-image: url(../img/hover-bcg5-iPadPro-album.png);
-        background-size: 1366px 1024px;
-        background-position: top left;
+        /* background-size: 1366px 1024px;
+        background-position: top left; */
     }
 }
