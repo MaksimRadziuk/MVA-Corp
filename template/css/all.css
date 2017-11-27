@@ -397,8 +397,22 @@ input.win-add-checkbox:checked + label span {
 .email-input:-moz-placeholder           {font-family: Roboto; font-size: 14px;}/* Firefox 18- */
 .email-input:-ms-input-placeholder      {font-family: Roboto; font-size: 14px;}
 
+
 .win-add-input>label.policyForm-label {
+    padding-left: 40px;
+    width: 90%;
+}
+.win-add-input>label.policyForm-label span {
+    margin-left: -40px;
+    margin-right: 0;
+}
+.win-add-input>label span.label-policy {
     line-height: 20px;
+    color: #394048;
+    width: 90%;
+    height: auto;
+    background: transparent;
+    margin-left: 40px;
 }
 .policyForm-text {
     color:#394048;
@@ -1090,13 +1104,28 @@ input.win-add-checkbox:checked + label span {
     .languages {
         left: 58vw;
     }
+
 }
 
 @media all and (max-width: 840px) {
     .policy-links {
         width: 600px;
     }
+}
 
+@media all and (max-width: 790px) {
+    .logo-box {
+        left: 95px;
+    }
+    .languages {
+        top: 65px;
+        left: auto;
+        right: 10px;
+    }
+    .phones {
+        left: 340px;
+        top: 15px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -1145,6 +1174,30 @@ input.win-add-checkbox:checked + label span {
     }
     .phones {
         left: 54vw;
+    }
+    #win h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #win-desc {
+        font-size: 14px;
+    }
+    #win-add {
+        font-size: 14px;
+    }
+    .phone-input {
+        height: 30px;
+        margin: 10px 0;
+    }
+    .email-input {
+        height: 30px;
+        margin: 10px 0;
+    }
+    .visible {
+        top: 40px;
+        width: 520px;
+        left:calc(50% - 260px);
+        height: 540px;
     }
 }
 
@@ -1216,21 +1269,57 @@ input.win-add-checkbox:checked + label span {
 }
 
 @media all and (max-width: 600px) {
-    .order {
-        display: none;
-    }
     .phones {
         display: none;
     }
-    .languages {
-        top: 0;
-        left: auto;
-        right: 10px;
+}
+
+@media all and (max-width: 535px) {
+    button.order {
+        padding:30px;
+    }
+    .visible {
+        padding-left:20px;
+        padding-right: 35px;
+        height: 95%;
+        padding-bottom: 65px;
+    }
+    .win-add-input>label.policyForm-label {
+        padding-left: 50px;
+    }
+    input[type="checkbox"] + label.policyForm-label span {
+        margin-right: 20px;
+        margin-left: -50px;
+    }
+    input[type="checkbox"] + label.policyForm-label span.label-policy {
+        margin-left: 0px;
+        margin-right: 0;
+    }
+
+    #win .visible form .win-add-input.policy {
+        height: 80px;
+    }
+    .submit-button-form {
+        width: 230px;
+        right: calc(50% - 115px);
+    }
+    #win h2 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    #win-desc {
+        font-size: 11px;
+    }
+    #win-add {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    .win-add-input>label, .policyForm-text {
+        font-size: 14px;
     }
 }
 
 @media all and (max-width: 500px) {
-    
     .logo-box {
         left: 80px;
         height: 60px;
@@ -1238,6 +1327,14 @@ input.win-add-checkbox:checked + label span {
     .logo-box .logo-block {
         background-size: cover;
         width: 175px;
+    }
+    button.order {
+        height: 60px;
+        padding-top: 25px;
+        font-size: 8px;
+    }
+    .languages {
+        top: 60px;
     }
     .menu-btn {
         width: 60px;
@@ -1348,6 +1445,15 @@ input.win-add-checkbox:checked + label span {
     }
 }
 
+@media all and (max-width: 380px) {
+    button.order {
+        padding: 25px 10px 30px;
+    }
+    .logo-box {
+        left: 65px;
+    }
+}
+
 @media all and (width: 1024px) and (height: 1366px) {
     .visible {
         height: 620px;
@@ -1356,34 +1462,6 @@ input.win-add-checkbox:checked + label span {
 @media all and (width: 1366px) and (height: 1024px) {
     .visible {
         height: 620px;
-    }
-}
-
-
-@media all and (max-height: 720px) {
-    #win h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-    #win-desc {
-        font-size: 14px;
-    }
-    #win-add {
-        font-size: 14px;
-    }
-    .phone-input {
-        height: 30px;
-        margin: 10px 0;
-    }
-    .email-input {
-        height: 30px;
-        margin: 10px 0;
-    }
-    .visible {
-        top: 40px;
-        width: 520px;
-        left:calc(50% - 260px);
-        height: 540px;
     }
 }
 

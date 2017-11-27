@@ -461,6 +461,8 @@
     font-size: 16px;
     letter-spacing: 2px;
     cursor: pointer;
+    font-family: 'Bicubik', sans-serif;
+    color: #fff;
 }
 
 @media all and (max-width: 1680px) {
@@ -1165,6 +1167,31 @@
         left: 0px;
         width: 100.5%;
         padding: 30px 30px; 
+    }
+}
+
+@media all and (max-width: 790px) {
+    .block-color {
+        top: 150px;
+    }
+    .monitor {
+        top: 230px;
+    }
+    @-webkit-keyframes bottomAppearance {
+        0% {
+            top:768px;
+        }
+        100% {
+            top: 230px;
+        }
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top:768px;
+        }
+        100% {
+            top: 230px;
+        }
     }
 }
 

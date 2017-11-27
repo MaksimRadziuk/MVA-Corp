@@ -6,7 +6,8 @@ $(window).on('load', function () {
     $preloader.fadeOut();
 });
 
-// Смена слайдов-рабочих столов
+
+
 $(document).ready(function() {
     $('body .section').eq(0).addClass("active").fadeIn(1000); // Показываем первый блок, можно и не первый, если прописать нужную цифру в eq()
     setInterval('blockAnimate();', 12000);// Вызываем функцию для смены блока каждые 20 секунд
@@ -30,33 +31,27 @@ function blockAnimate() {
     });
 };
 
-// Открыть меню
 $(document).ready(function(){
   $(".menu-btn").click(function() {
     $(".menu-desktop").fadeToggle(300);
   });
 });
-//Закрыть меню
 $(document).ready(function(){
   $(".menu-close").click(function() {
     $(".menu-desktop").fadeToggle(300);
   });
 });
-// Сменить гамбургер на крест
 $(document).ready(function(){
   $(".menu-btn").click(function() {
     $('.menu-close').addClass('change');
   });
 });
-// возврат
 $(document).ready(function(){
   $(".menu-close").click(function() {
     $('.menu-close').removeClass('change');
   });
 });
 
-
-// Развернуть форму в конатктах и поворот стрелок
 $(document).ready(function(){
   $(".arrowDown").click(function() {
     $('.redForm').toggleClass("show"); 
@@ -67,86 +62,216 @@ $(document).ready(function(){
 });
 
 
-// Управление высотой рабочей области при работе с панелью cooky
-$("document").ready(function(){
-  if(window.innerWidth > 500){
-    $(".close-cookies").click(function() {
-      $('.cookie-branch').hide();
-      $('#section1').css("height", "100vh");
-      $('#section2').css("height", "100vh");
-      $('#section3').css("height", "100vh");
-      $('#section4').css("height", "100vh");
-      $('#section5').css("height", "100vh");
-      $('#top-part').css("height", "50vh");
-      $('.hover-block').css("height", "100vh");
+$(document).ready(function(){
+
+	if(window.innerWidth > 500){
+		$(".close-cookies").click(function() {
+			$('.cookie-branch').hide();
+			$('#section1').css("height", "100vh");
+			$('#section2').css("height", "100vh");
+			$('#section3').css("height", "100vh");
+			$('#section4').css("height", "100vh");
+			$('#section5').css("height", "100vh");
+			$('#top-part').css("height", "50vh");
+            $('.hover-block').css("height", "100vh");
+		});
+	}
+	else {
+		$(".close-cookies").click(function() {
+			$('.cookie-branch').hide();
+			$('#section1').css("height", "100vh");
+			$('#section2').css("height", "100vh");
+			$('#section3').css("height", "100vh");
+			$('#section4').css("height", "100vh");
+			$('#section5').css("height", "100vh");
+			$('#top-part').css("height", "65vh");
+            $('.hover-block').css("height", "100vh");
+		});
+	}
+	
+	if(window.innerWidth > 500){
+		if ($(".cookie-branch").length) {
+			$('#section1').css("height", "calc(100vh - 40px)");
+			$('#section2').css("height", "calc(100vh - 40px)");
+			$('#section3').css("height", "calc(100vh - 40px)");
+			$('#section4').css("height", "calc(100vh - 40px)");
+			$('#section5').css("height", "calc(100vh - 40px)");
+			$('#top-part').css("height", "calc(50vh - 40px)");
+            $('.hover-block').css("height", "calc(100vh - 40px)")
+		
+		}
+		else {
+			$('#section1').css("height", "100vh");
+			$('#section2').css("height", "100vh");
+			$('#section3').css("height", "100vh");
+			$('#section4').css("height", "100vh");
+			$('#section5').css("height", "100vh");
+			$('#top-part').css("height", "50vh");
+            $('.hover-block').css("height", "100vh");
+		}
+	}
+	
+    if(window.innerWidth < 500){
+	    if ($(".cookie-branch").length) {
+			$('#section1').css("height", "calc(100vh - 40px)");
+			$('#section2').css("height", "calc(100vh - 40px)");
+			$('#section3').css("height", "calc(100vh - 40px)");
+			$('#section4').css("height", "calc(100vh - 40px)");
+			$('#section5').css("height", "calc(100vh - 40px)");
+			$('#top-part').css("height", "calc(65vh - 40px)");
+	    }
+	    else { 
+			$('#section1').css("height", "100vh");
+			$('#section2').css("height", "100vh");
+			$('#section3').css("height", "100vh");
+			$('#section4').css("height", "100vh");
+			$('#section5').css("height", "100vh");
+			$('#top-part').css("height", "65vh");
+    	}
+    }
+});
+
+
+$(document).on('click', 'button.order', function(event) {
+	
+	$('#win').css('display', 'block');
+});
+
+$(document).on('click', 'a.call-order', function(event) {
+	
+	$('#win1').css('display', 'block');
+});
+
+$(document).on('click', '#win button.close-window', function(event) {
+	
+	$('#win').css('display', 'none');
+});
+
+$(document).on('click', '#win1 button.close-window', function(event) {
+	
+	$('#win1').css('display', 'none');
+});
+
+$(document).on('click', '#win .submit-button-form', function(event) {
+	
+	$('#win').css('display', 'none');
+	window.open($('#popup-select').val(), '_blank');
+});
+
+$(document).on('click', '.block-color button', function(event) {
+	
+	window.open('https://www.behance.net/mvacorp', '_blank');
+});
+
+$(document).on('click', '.buttonSubmit', function(event) {
+
+    var captcha = grecaptcha.getResponse();
+
+    if ($('.redForm input[name="skype"]').val() == '') {
+
+        return false;
+    }
+
+    if ($('.redForm input[name="email"]').val() == '') {
+
+        return false;
+    }
+
+    if ($('.redForm textarea').val() == '') {
+
+        return false;
+    }
+
+    if ($('.redForm input[type="checkbox"]').prop('checked') == false) {
+
+        return false;
+    }
+
+    if (captcha.length) {
+
+        var params = {
+            recaptcha: captcha,
+            name: $('.redForm input[name="name"]').val(),
+            email: $('.redForm input[name="email"]').val(),
+            skype: $('.redForm input[name="skype"]').val(),
+            text: $('.redForm textarea').val()
+        };
+
+        ajax('/?task=sendMessage', params, function (response) {
+
+            if (response.status == 'Ok') {
+	
+			    $('.redForm').toggleClass("show"); 
+			    $('.redForm form').fadeToggle(200); 
+			    $('.arrowDown').toggleClass("rotated");
+			    $('.bottom-part').toggleClass("long");
+			    $('.redForm input[name="name"]').val('');
+			    $('.redForm input[name="email"]').val('');
+			    $('.redForm input[name="skype"]').val('');
+			    $('.redForm textarea').val('');
+            }
+        });
+
+        grecaptcha.reset();
+    }
+});
+
+$(document).on('click', '#win1 .submit-button-form', function(event) {
+
+    if ($('#win1 input[name="name"]').val() == '') {
+
+        return false;
+    }
+
+    if ($('#win1 input[name="phone"]').val() == '') {
+
+        return false;
+    }
+    
+    if ($('#win1 input[type="checkbox"]').prop('checked') == false) {
+
+        return false;
+    }
+
+    var params = {
+        name: $('#win1 input[name="name"]').val(),
+        phone: $('#win1 input[name="phone"]').val()
+    };
+
+    ajax('/?task=sendCallback', params, function (response) {
+
+        if (response.status == 'Ok') {
+	        
+		    $('#win1 input[name="name"]').val('');
+		    $('#win1 input[name="phone"]').val('');
+			$('#win1').css('display', 'none');
+        }
     });
-  }
-  else {
-      $(".close-cookies").click(function() {
-        $('.cookie-branch').hide();
-        $('#section1').css("height", "100vh");
-        $('#section2').css("height", "100vh");
-        $('#section3').css("height", "100vh");
-        $('#section4').css("height", "100vh");
-        $('#section5').css("height", "100vh");
-        $('#top-part').css("height", "65vh");
-        $('.hover-block').css("height", "100vh");
-      });
-  }
 });
 
-//проверка наличия панели cooky
-  //разрешения более 500px
-$("document").ready(function(){
-  if(window.innerWidth > 500){
-    if ($(".cookie-branch").length) {
-          $('#section1').css("height", "calc(100vh - 40px)");
-          $('#section2').css("height", "calc(100vh - 40px)");
-          $('#section3').css("height", "calc(100vh - 40px)");
-          $('#section4').css("height", "calc(100vh - 40px)");
-          $('#section5').css("height", "calc(100vh - 40px)");
-          $('#top-part').css("height", "calc(50vh - 40px)");
-          $('.hover-block').css("height", "calc(100vh - 40px)");
-    }
-    else {
-          $('#section1').css("height", "100vh");
-          $('#section2').css("height", "100vh");
-          $('#section3').css("height", "100vh");
-          $('#section4').css("height", "100vh");
-          $('#section5').css("height", "100vh");
-          $('#top-part').css("height", "50vh");
-          $('.hover-block').css("height", "100vh");
-    }
-  }
-});
-  //разрешения менее 500px
-$("document").ready(function(){
-  if(window.innerWidth < 500){
-    if ($(".cookie-branch").length) {
-          $('#section1').css("height", "calc(100vh - 40px)");
-          $('#section2').css("height", "calc(100vh - 40px)");
-          $('#section3').css("height", "calc(100vh - 40px)");
-          $('#section4').css("height", "calc(100vh - 40px)");
-          $('#section5').css("height", "calc(100vh - 40px)");
-          $('#top-part').css("height", "calc(65vh - 40px)");
-    }
-    else { 
-          $('#section1').css("height", "100vh");
-          $('#section2').css("height", "100vh");
-          $('#section3').css("height", "100vh");
-          $('#section4').css("height", "100vh");
-          $('#section5').css("height", "100vh");
-          $('#top-part').css("height", "65vh");
-    }
-  }
-});
 
+// обёртка для ajax-запроса
+function ajax(url, params, callback) {
+
+    if (callback && (typeof(callback) === 'function')) {
+
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: params,
+            async: false,
+            success: callback,
+            error: function (jqxhr, status, message) {
+            }
+        });
+    }
+}
 
 //активация маски ввода Номер телефона
 jQuery(function($){
    $("#phone").mask("+7 (999) 999-9999");
    $("#phone1").mask("+7 (999) 999-9999");
-   });
+});
 
 // Маска заполнения формы НОМЕР ТЕЛЕФОНА
 /*
