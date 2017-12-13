@@ -3,6 +3,40 @@
     display: block;
     visibility: visible;
 }
+#section3.active .text-block{
+    color:#bfbfbf;
+}
+#section3.active .phones a {
+    color: #394048;
+}
+#section3.active .phones a>span {
+    color: #394048;
+}
+#section3.active .call-order {
+    border:1px solid #394048;
+    background-image:url(../img/call-icon-dark.png); 
+}
+#section3.active .languages a {
+    color: #bfbfbf;
+}
+#section3.active .languages a.active {
+    color: #394048;
+}
+#section3.active .languages {
+    color: #394048;
+}
+#section3.active .foot-text .foot-holder span {
+    color: #394048;
+}
+#section3.active .divider {
+    color: #394048;
+}
+#section3.active .skype-holder p {
+    color: #394048;
+}
+#section3.active .skype-holder i  {
+    color: #394048;
+}
 #section1 {
     display: none;
     top: 0;
@@ -432,10 +466,12 @@
 #section5 .css-typing {
     margin-top: 45px;
     font-size: 72px;
+    line-height: 60px;
 }
 #section5 .css-typing1 {
     font-size: 72px;
     margin-left: 190px;
+    line-height: 60px;
 }
 
 @keyframes type{
@@ -611,28 +647,28 @@
 
 @media all and (max-width: 1366px) {
     .monitor {
-        width: 550px;
+        width: 490px;
         height: 600px;
-        top: 200px;
-        left: 440px;
+        top: 170px;
+        left: 496px;
         background-size: 100%;
     }
     .picture-box {
         top: 17px;
-        left: 13px;
-        width: 524px;
-        height: 300px;  
+        left: 12px;
+        width: 467px;
+        height: 263px;  
     }
     .picture-box:before {
-        width: 530px;
-        height: 1478px;
+        width: 467px;
+        height: auto;
     }
     @-webkit-keyframes bottomAppearance {
         0% {
             top:905px;
         }
         100% {
-            top: 240px;
+            top: 170px;
         }
     }
     @keyframes bottomAppearance {
@@ -640,7 +676,7 @@
             top:905px;
         }
         100% {
-            top: 240px;
+            top: 170px;
         }
     }
     .block-color {
@@ -687,10 +723,8 @@
 
 @media all and (max-width: 1280px) {
     .monitor {
-        width: 550px;
-        height: 450px;
-        top: 180px;
-        left: 390px;
+        top: 150px;
+        left: 411px;
         background-size: 100%;
     }
     @-webkit-keyframes bottomAppearance {
@@ -698,7 +732,7 @@
             top:720px;
         }
         100% {
-            top: 180px;
+            top: 150px;
         }
     }
     @keyframes bottomAppearance {
@@ -706,18 +740,9 @@
             top:720px;
         }
         100% {
-            top: 180px;
+            top: 150px;
         }
-    }
-    .picture-box {
-        top: 15px;
-        left: 13px;
-        width: 525px;
-        height: 299px;  
-    }
-    .picture-box:before {
-        width: 525px;
-    }
+    } 
     #section1 .picture-box:before {
         height: 1400px;
     }
@@ -929,7 +954,7 @@
     .monitor {
         height: 460px;
         top: 150px;
-        left: 235px;
+        left: 320px;
         background-size: 100%;
     }
     @-webkit-keyframes bottomAppearance {
@@ -947,12 +972,6 @@
         100% {
             top: 150px;
         }
-    }
-    .picture-box {
-        top: 18px;
-        left: 13px;
-        width: 524px;
-        height: 296px;  
     }
     .picture-box:before {
         width: 524px;
@@ -1158,10 +1177,12 @@
     #section5 .css-typing {
         margin-top: 45px;
         font-size: 34px;
+        line-height: 30px;
     }
     #section5 .css-typing1 {
         font-size: 34px;
         margin-left: 70px;
+        line-height: 30px;
     }
     .block-color button {
         left: 0px;
@@ -1192,6 +1213,9 @@
         100% {
             top: 230px;
         }
+    }
+    .phones {
+        padding-top: 20px;
     }
 }
 
@@ -1708,7 +1732,7 @@
     .block-color {
         width: 225px;
         height: 220px;
-        top: 295px;
+        top: 240px;
         right: auto;
         left: 0;
     }
@@ -1961,6 +1985,9 @@
         100% {
             top:-1055px;
         }
+    }
+    .foot-text {
+        bottom: 0px;
     }
 }
 
