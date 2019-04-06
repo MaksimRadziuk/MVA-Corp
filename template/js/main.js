@@ -1,12 +1,3 @@
-// ===== PRELOADER
-
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader');
-
-    $preloader.fadeOut();
-});
-
-
 
 $(document).ready(function() {
     $('body .section').eq(0).addClass("active").fadeIn(1000); // Показываем первый блок, можно и не первый, если прописать нужную цифру в eq()
@@ -34,20 +25,10 @@ function blockAnimate() {
 $(document).ready(function(){
   $(".menu-btn").click(function() {
     $(".menu-desktop").fadeToggle(300);
-  });
-});
-$(document).ready(function(){
-  $(".menu-close").click(function() {
-    $(".menu-desktop").fadeToggle(300);
-  });
-});
-$(document).ready(function(){
-  $(".menu-btn").click(function() {
     $('.menu-close').addClass('change');
   });
-});
-$(document).ready(function(){
   $(".menu-close").click(function() {
+    $(".menu-desktop").fadeToggle(300);
     $('.menu-close').removeClass('change');
   });
 });
@@ -67,11 +48,7 @@ $(document).ready(function(){
 	if(window.innerWidth > 500){
 		$(".close-cookies").click(function() {
 			$('.cookie-branch').hide();
-			$('#section1').css("height", "100vh");
-			$('#section2').css("height", "100vh");
-			$('#section3').css("height", "100vh");
-			$('#section4').css("height", "100vh");
-			$('#section5').css("height", "100vh");
+			$('.section').css("height", "100vh");
 			$('#top-part').css("height", "50vh");
             $('.hover-block').css("height", "100vh");
 		});
@@ -79,11 +56,7 @@ $(document).ready(function(){
 	else {
 		$(".close-cookies").click(function() {
 			$('.cookie-branch').hide();
-			$('#section1').css("height", "100vh");
-			$('#section2').css("height", "100vh");
-			$('#section3').css("height", "100vh");
-			$('#section4').css("height", "100vh");
-			$('#section5').css("height", "100vh");
+			$('.section').css("height", "100vh");
 			$('#top-part').css("height", "65vh");
             $('.hover-block').css("height", "100vh");
 		});
@@ -91,21 +64,13 @@ $(document).ready(function(){
 	
 	if(window.innerWidth > 500){
 		if ($(".cookie-branch").length) {
-			$('#section1').css("height", "calc(100vh - 40px)");
-			$('#section2').css("height", "calc(100vh - 40px)");
-			$('#section3').css("height", "calc(100vh - 40px)");
-			$('#section4').css("height", "calc(100vh - 40px)");
-			$('#section5').css("height", "calc(100vh - 40px)");
+			$('.section').css("height", "calc(100vh - 40px)");
 			$('#top-part').css("height", "calc(50vh - 40px)");
             $('.hover-block').css("height", "calc(100vh - 40px)")
 		
 		}
 		else {
-			$('#section1').css("height", "100vh");
-			$('#section2').css("height", "100vh");
-			$('#section3').css("height", "100vh");
-			$('#section4').css("height", "100vh");
-			$('#section5').css("height", "100vh");
+			$('.section').css("height", "100vh");
 			$('#top-part').css("height", "50vh");
             $('.hover-block').css("height", "100vh");
 		}
@@ -113,19 +78,11 @@ $(document).ready(function(){
 	
     if(window.innerWidth < 500){
 	    if ($(".cookie-branch").length) {
-			$('#section1').css("height", "calc(100vh - 40px)");
-			$('#section2').css("height", "calc(100vh - 40px)");
-			$('#section3').css("height", "calc(100vh - 40px)");
-			$('#section4').css("height", "calc(100vh - 40px)");
-			$('#section5').css("height", "calc(100vh - 40px)");
+			$('.section').css("height", "calc(100vh - 40px)");
 			$('#top-part').css("height", "calc(65vh - 40px)");
 	    }
 	    else { 
-			$('#section1').css("height", "100vh");
-			$('#section2').css("height", "100vh");
-			$('#section3').css("height", "100vh");
-			$('#section4').css("height", "100vh");
-			$('#section5').css("height", "100vh");
+			$('.section').css("height", "100vh");
 			$('#top-part').css("height", "65vh");
     	}
     }

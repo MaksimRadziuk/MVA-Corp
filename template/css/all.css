@@ -228,30 +228,6 @@ button {
     color: #fff;
 }
 
-/*===== ПРЕЛОАДЕР =====*/
-
-#page-preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background:#fff;
-    z-index: 1000;
-}
-
-#page-preloader .spinner {
-    background: url("../img/spinner.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
-    background-size: contain;
-    top:50%;
-    height: 300px;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
-    position: absolute;
-    width: 300px;
-}
-
 /*==== модальное окно ЗАКАЗАТЬ - попап ======*/
 
 .overlay {
@@ -614,7 +590,7 @@ input.win-add-checkbox:checked + label span:first-child {
 .phones {
     position: absolute;
     top: 0;
-    left: 45vw;
+    right: 240px;   
     height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -628,7 +604,7 @@ input.win-add-checkbox:checked + label span:first-child {
     z-index: 999; 
 }
 .phones a {
-    margin-right: 60px;
+    margin-right: 50px;
     font-size: 14px;
     font-weight: 200;
     text-decoration:none;
@@ -832,33 +808,6 @@ input.win-add-checkbox:checked + label span:first-child {
                 transform: rotateZ(0deg);
     }
 }
-.languages {
-    position: absolute;
-    top: 0;
-    left: 75vw;
-    width: 110px;
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    z-index: 999; 
-    color: #fff;
-}
-.languages a {
-    font-size: 14px;
-    color: #fff;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.languages a.active {
-    color: #2f353c;
-}
 
 /* === ОТПРАВИТЬ ПИСЬМО (ФУТЕР) === */
 .mail-order {
@@ -999,38 +948,32 @@ input.win-add-checkbox:checked + label span:first-child {
 }
 
 @media all and (max-width: 1350px) {
-    .phones {
-        display: block;
-        left: 49vw;
-        height: auto;
-        padding-top: 35px;
-    }
-    .phones a {
-        display: inline-block;
-    }
-    .phones a:nth-child(1) {
-        display: block;
-    }
+/*     .phones {
+    display: block;
+    left: 49vw;
+    height: auto;
+    padding-top: 35px;
+}
+.phones a {
+    display: inline-block;
+}
+.phones a:nth-child(1) {
+    display: block;
+} */
     .call-order {
         width: 40px;
         height: 40px;
         margin-top: -15px;
     }
-    .languages {
-        left: 70vw;
-    }
 }
 
 @media all and (max-width: 1280px) {
-    .languages {
-        left: 70vw;
-    }
     .foot-text {
         display: block;
         height: 60px;
         text-align: right;
         width: 570px;
-        
+        bottom: 35px;
     }
     .foot-text .foot-holder span {
         margin-right: 0;
@@ -1046,33 +989,34 @@ input.win-add-checkbox:checked + label span:first-child {
         height: 620px;
         padding: 20px 50px;
     }
+    .policy-links {
+        display: none;
+    }
 }
 @media all and (max-width: 1250px) {
     .policy-links {
         bottom: 40px;
     }
-    .foot-text {
+    /* .foot-text {
         bottom: 75px;
-    }
+    } */
 }
 
 @media all and (max-width:1240px) {
-    .phones {
+    /* .phones {
         left: 53vw;
-    }
+    } */
 }
 
 @media all and (max-width:1150px) {
     .text-block {
         display: none;
     }
-    .phones {
+    /* .phones {
         left: 44vw;
         padding-top: 30px;
-    }
-    .languages {
-        left: 68vw;
-    }
+    } */
+
 }
 
 @media all and (max-width: 1024px) {
@@ -1086,12 +1030,9 @@ input.win-add-checkbox:checked + label span:first-child {
         height: 620px;
         top: 40px;
     }
-    .phones {
+    /* .phones {
         left: 40vw;
-    }
-    .languages {
-        left: 64vw;
-    }
+    } */
     .footer .foot-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1149,16 +1090,21 @@ input.win-add-checkbox:checked + label span:first-child {
     .phones a:nth-child(1) {
         display: none;
     }
-    .phones a:nth-child(2) {
+    .phones {
+        left: 410px;
+        height: auto;
+        top: 50px;
+    }
+    .divider, .foot-text .foot-holder span:last-child {
         display: none;
     }
-    .phones {
-        left: 50vw;
+    .foot-text {
+        display: flex;
+        width: 380px;
     }
-    .languages {
-        left: 58vw;
+    .skype-holder {
+        padding-left: 0;
     }
-
 }
 
 @media all and (max-width: 840px) {
@@ -1171,11 +1117,6 @@ input.win-add-checkbox:checked + label span:first-child {
     .logo-box {
         left: 95px;
     }
-    .languages {
-        top: 65px;
-        left: auto;
-        right: 10px;
-    }
     .phones {
         left: 340px;
         top: 15px;
@@ -1185,15 +1126,6 @@ input.win-add-checkbox:checked + label span:first-child {
 @media all and (max-width: 768px) and (max-height: 1024px) {
     .call-order {
         margin-top: 0;
-    }
-    .languages {
-        left: 58vw;
-        height: 40px;
-        top: 36px;
-    }
-    .languages a {
-        margin: 0 10px;
-        font-size: 12px;
     }
     .foot-text {
         display: -webkit-box;
@@ -1218,11 +1150,6 @@ input.win-add-checkbox:checked + label span:first-child {
 }
 
 @media all and (max-width: 720px) {
-    .languages {
-        top:70px;
-        left: auto;
-        right: 10px;
-    }
     .phones {
         left: 54vw;
     }
@@ -1291,7 +1218,7 @@ input.win-add-checkbox:checked + label span:first-child {
         right: 20px;
     }
     .foot-text {
-        bottom: 100px;
+        bottom: 10px;
     }
 }
 
@@ -1370,9 +1297,6 @@ input.win-add-checkbox:checked + label span:first-child {
         height: 60px;
         padding-top: 25px;
         font-size: 8px;
-    }
-    .languages {
-        top: 60px;
     }
     .menu-btn {
         width: 60px;
