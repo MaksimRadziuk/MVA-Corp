@@ -476,8 +476,8 @@
     content: '';
     background-image: url(../img/content6.png);
     height: 3865px;
-    -webkit-animation: scroll6 13s ease-in-out alternate infinite;
-            animation: scroll6 13s ease-in-out alternate infinite;
+    -webkit-animation: scroll6 17s ease-in-out alternate infinite;
+            animation: scroll6 17s ease-in-out alternate infinite;
 }
 @keyframes scroll6 {
     0% {
@@ -508,7 +508,7 @@
     background-image:url(../img/content7.jpg);
     background-size: 100% auto;
     background-position: center top;
-    animation: scroll7 13s ease-in-out alternate infinite;
+    animation: scroll7 17s ease-in-out alternate infinite;
 }
 @keyframes scroll7 {
     0% {
