@@ -131,6 +131,62 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+#section8 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg8-1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section9 {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg9-1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section10 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg10-1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section11 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg11-1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .hover-block {
     position: absolute;
     top: 0;
@@ -153,6 +209,11 @@
 }
 #section5 .hover-block {
     background-image: url(../img/hover-bcg5-1920x1070.png);
+}
+#section9 .hover-block {
+    background-image: url(../img/hover-bcg9-1920x1070.png);
+    background-position: 10% bottom;
+    background-size: auto;
 }
 .monitor {
     display: block;
@@ -524,6 +585,16 @@
         top:-3135px;
     }
 }
+#section8 .block-color {
+    background-color: #b4a45e;
+}
+#section9 .block-color {
+    background-color: #f09c5c;
+}
+#section8 .css-typing1,
+#section9 .css-typing1 {
+    margin-left: 210px;
+}
 .css-typing {
     display: block;
     margin-top: 60px;
@@ -681,6 +752,38 @@
         width: 673px;
         height: 377px;
     }
+    #section8 .monitor {
+        width: 710px;
+    }
+    #section9 .hover-block {
+        background-image: url(../img/hover-bcg9-1920x1070.png);
+        background-position: 10% bottom;
+        background-size: auto 90%;
+    }
+    #section9 .monitor {
+        width: 590px;
+        height: 710px;
+        top: 30vh;
+        left: 590px;
+        background-size: 100%;
+        animation-name:bottomAppearance2;
+    }
+    @-webkit-keyframes bottomAppearance2 {
+        0% {
+            top:1050px;
+        }
+        100% {
+            top: 30vh;
+        }
+    }
+    @keyframes bottomAppearance2 {
+        0% {
+            top:1050px;
+        }
+        100% {
+            top: 30vh;
+        }
+    }
 }
 
 @media all and (max-width: 1440px){
@@ -819,6 +922,16 @@
             top:-2350px;
         }
     }
+    #section8 .monitor {
+        width: 630px;
+    }
+    #section9 .hover-block {
+        background-size: auto 75%;
+    }
+    #section9 .monitor {
+        width: 515px;
+        left: 480px;
+    }
 }
 
 @media all and (max-width: 1366px) {
@@ -902,6 +1015,19 @@
     }
     #section7 .css-typing1 {
         margin-left: 163px;
+    }
+    #section8 .monitor {
+        width: 470px;
+        left: 420px;
+    }
+    #section8 .block-color {
+        width: 430px;
+        height: 315px;
+        top: 110px;
+    }
+    #section9 .hover-block {
+        background-size: auto 85%;
+        background-position: 3% bottom;
     }
 }
 
@@ -1139,6 +1265,13 @@
     }
     #section7 .monitor {
         left: 31%;
+    }
+    #section9 .monitor {
+        left: 375px;
+    }
+    #section8 .css-typing1, 
+    #section9 .css-typing1 {
+        margin-left: 160px;
     }
 }
 
@@ -1426,6 +1559,22 @@
     #section7 .block-color p {
         font-size: 14px;
     }
+    #section8 .block-color {
+        width: 330px;
+        height: 280px;
+    }
+    #section8 .monitor {
+        left: 280px;
+    }
+    #section9 .hover-block {
+        background-position: -14% bottom;
+    }
+    #section9 .monitor {
+        left: 215px;
+    } 
+    #section8 .css-typing1, #section9 .css-typing1 {
+        margin-left: 112px;
+    }
 }
 
 @media all and (max-width: 930px) {
@@ -1482,6 +1631,10 @@
     .phones a {
         margin: 0;
 
+    }
+    #section9 .hover-block {
+        background-size: auto 870px;
+        background-position: -225px bottom;
     }
 }
 
@@ -1767,6 +1920,34 @@
         margin: 0;
         width: calc(100% - 50px);
     }
+    #section8 .monitor {
+        left: 150px;
+        top: 280px;
+    }
+    #section8 .block-color button {
+        width: 280px;
+        font-size: 13px;
+    }
+    #section9 .monitor {
+        top: 180px;
+        width: 470px;
+    }
+    @-webkit-keyframes bottomAppearance2 {
+        0% {
+            top:1050px;
+        }
+        100% {
+            top: 180px;
+        }
+    }
+    @keyframes bottomAppearance2 {
+        0% {
+            top:1050px;
+        }
+        100% {
+            top: 180px;
+        }
+    }
 }
 
 @media all and (max-width: 720px) {
@@ -2020,6 +2201,20 @@
     #section6 .hover-block {
         width: 61%;
     }
+    #section8 {
+        background-image: url(../img/bcg8-640x1024.jpg);
+    }
+    #section8 .block-color {
+        top: 440px;
+    }
+    #section8 .monitor {
+        width: 400px;
+        top: 185px;
+    }
+    #section9 .monitor {
+        width: 450px;
+        left: 175px;
+    }
 }
 @media all and (max-width: 590px) {
     #section6 .hover-block {
@@ -2073,6 +2268,11 @@
     #section7 .block-color {
         top: 412px;
     }
+    #section8 .monitor,
+    #section9 .monitor {
+        width: 370px;
+        left: 125px;
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -2118,6 +2318,18 @@
     }
     .hover-block {
         display: none;
+    }
+    #section9 .hover-block {
+        display: block;
+    }
+    #section9 .hover-block {
+        background-size: auto 520px;
+        background-position: -160px bottom;
+    }
+    #section9 .monitor {
+        width: 275px;
+        left: 60px;
+        top: 80px;
     }
     .block-color {
         width: 225px;
@@ -2429,6 +2641,36 @@
     }
     #section7 .block-color {
         top: 350px;
+    }
+    #section8 .monitor {
+        width: 270px;
+        left: 70px;
+        animation-name:bottomAppearance2; 
+    }
+    #section8 .block-color {
+        width: 225px;
+        height: 215px;
+        top: 360px;
+    }
+    #section8 .block-color button {
+        width: 100%;
+        font-size: 10px;
+    }
+    @-webkit-keyframes bottomAppearance2 {
+        0% {
+            left: calc(100% + 10px);
+        }
+        100% {
+            left: calc(100% - 310px);
+        }
+    }
+    @keyframes bottomAppearance2 {
+        0% {
+            left: calc(100% + 10px);
+        }
+        100% {
+            left: calc(100% - 310px);
+        }
     }
 }
 

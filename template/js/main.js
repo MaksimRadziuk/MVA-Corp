@@ -1,11 +1,11 @@
 
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('body .section').eq(0).addClass("active").fadeIn(1000); // Показываем первый блок, можно и не первый, если прописать нужную цифру в eq()
     setInterval('blockAnimate();', 12000);// Вызываем функцию для смены блока каждые 20 секунд
-});
+});*/
 
 // Функция для смены блоков, показывает блоки по очереди, начальный блок задаётся выше
-function blockAnimate() {
+/*function blockAnimate() {
     var length = $('body .section').length - 1;
     $('body .section').each(function(index) {
         if($(this).hasClass('active') && index != length) {
@@ -20,7 +20,7 @@ function blockAnimate() {
             return false;
         }
     });
-};
+};*/
 
 $(document).ready(function(){
   $(".menu-btn").click(function() {
